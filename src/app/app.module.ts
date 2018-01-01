@@ -9,7 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { ProjectsPage } from '../pages/projects/projects';
 import { SchoolservicePage } from '../pages/schoolservice/schoolservice';
 import { JoinPage } from '../pages/join/join';
-import { TabsPage } from '../pages/tabs/tabs';
+import { TabsPage } from '../tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
