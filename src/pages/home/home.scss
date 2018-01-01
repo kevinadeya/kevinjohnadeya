@@ -1,3 +1,52 @@
 page-home {
+.logo { display: block; text-align: left;}
+}
 
+.toolbar-background{
+    background-color: #b8dee4;
+}
+
+.tabbar { 
+    a:nth-of-type(1) {
+        background-color: #b8dee4;
+    }
+
+a:nth-of-type(2) {
+    background-color: #c39a44;
+}
+}
+.card-con .cardicon {
+ max-width: 70px;
+ height: auto;
+ margin: 0px auto;
+ display: block;
+
+
+}
+
+.card-con {
+    width: 100%;
+    
+    height: 23vh;
+    margin-top:10px;
+}
+
+.card-con h3 {
+    margin-top: 7px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    
+}
+
+#inter {
+    background-image: url("../../assets/imgs/sports-day-opc.jpg");
+}
+
+#school {
+    background-image: url("../../assets/imgs/bg_school-opc.jpg");
+}
+
+#join {
+    background-image: url("../../assets/imgs/hands-opc.jpg");
 }

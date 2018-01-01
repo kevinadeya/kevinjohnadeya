@@ -1,17 +1,30 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar side="left">
+    <ion-title>
+      <img src="../../assets/imgs/logo-1.png" alt="logo" height="44" class="logo">
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-card>
+    
+      
+    
+      <ion-card-content class="card-con" id="inter" type = "button" (click)="inter()">
+        <img src="../../assets/imgs/earth.png" class="cardicon" alt="international programs">
+        <h3 >International Projects</h3>
+      </ion-card-content>
+
+      <ion-card-content class="card-con" id="inter" type = "button" (click)="school()">
+        <img src="../../assets/imgs/school.png" class="cardicon" alt="school services">
+        <h3>School Services</h3>        
+      </ion-card-content>
+
+      <ion-card-content class="card-con" id="inter" type = "button" (click)="join()">
+        <img src="../../assets/imgs/volenteer.png" class="cardicon" alt="join us">
+        <h3>Join Us</h3>        
+      </ion-card-content>
+    
+    </ion-card>
 </ion-content>
