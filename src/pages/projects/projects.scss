@@ -1,3 +1,21 @@
 page-projects {
 
+    .proj {
+        width: 100%;
+        
+        
+        .image {
+            width: 19%;
+            //background-color: yellow;
+            float: left;
+        }
+
+        .pro-text {
+            width: 79%;
+            //background-color: green;
+            float: right;
+        }
+    }
+
+    
 }
