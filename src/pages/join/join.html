@@ -10,6 +10,7 @@
       <img src="../../assets/imgs/logo-1.png" alt="logo" height="44" class="logo">
     </ion-title>
   </ion-navbar>
+  
 </ion-header>
 
 <ion-content padding>
@@ -19,7 +20,71 @@
       JOIN US
     </ion-card-header>
     <ion-card-content>
-      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+       <ion-item>
+          <ion-label color="primary" stacked>Name</ion-label>
+          <ion-input type="text" placeholder="Name"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Mail</ion-label>
+            <ion-input type="email" placeholder="Mail"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label color="primary" stacked>Date of birth</ion-label>
+              <ion-input type="date"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary" stacked>City of recidence</ion-label>
+                <ion-input type="text" placeholder="City of recidence"></ion-input>
+              </ion-item>
+
+              <ion-list radio-group [(ngModel)]="membership">
+
+                  <ion-list-header>
+                      Type of membership
+                  </ion-list-header>
+                
+                  <ion-item>
+                    <ion-label>Individual(DKK 150 kr per year)</ion-label>
+                    <ion-radio value="individual"></ion-radio>
+                  </ion-item>
+                
+                  <ion-item>
+                    <ion-label>Student(DKK 75 per year)</ion-label>
+                    <ion-radio value="student"></ion-radio>
+                  </ion-item>
+                
+                  <ion-item>
+                    <ion-label>Family(DKK 200 per year)</ion-label>
+                    <ion-radio value="family"></ion-radio>
+                  </ion-item>
+                                
+                </ion-list>
+
+                <ion-list radio-group [(ngModel)]="newsletter">
+
+                    <ion-list-header>
+                        I want to recive the CB newsletter
+                    </ion-list-header>
+                  
+                    <ion-item>
+                      <ion-label>Yes</ion-label>
+                      <ion-radio value="yes"></ion-radio>
+                    </ion-item>
+                  
+                    <ion-item>
+                      <ion-label>No</ion-label>
+                      <ion-radio value="no"></ion-radio>
+                    </ion-item>
+                       
+                  </ion-list>
+
+                  <button ion-button color="secondary" class="left">
+                      Send
+                    </button>
+                    
+                    <button ion-button color="danger" class="right">
+                      Cancel
+                    </button>
     </ion-card-content>  
     
       

@@ -1,3 +1,22 @@
 page-about {
 
+    .text {
+        width: 100%;
+
+    }
+
+    .img {
+        width: 100%;
+        margin-top:10px;
+    }
+
+    .but {
+        width:100%;
+
+        .center {
+            display: block;
+            margin: 10px auto;
+        }
+    }
+
 }
