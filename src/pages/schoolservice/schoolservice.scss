@@ -1,3 +1,23 @@
 page-schoolservice {
 
+    .full {
+        width: 100%;
+    }
+
+    .half {
+        width: 48%;
+        margin-right:5px;
+        float: left;
+        margin-top: 10px;
+        text-align: center;
+
+        a:link, a:visited {
+        
+            font-size:14px;
+            padding-top:8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+
 }
