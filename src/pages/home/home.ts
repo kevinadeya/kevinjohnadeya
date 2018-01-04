@@ -15,17 +15,14 @@ export class HomePage {
   }
 
   inter() {
-    //alert("Hello projects");
     this.navCtrl.setRoot(ProjectsPage);
   }
 
   school() {
-  // alert("School");
     this.navCtrl.setRoot(SchoolservicePage);
   }
 
   join() {
-    //alert("Joim");
     this.navCtrl.setRoot(JoinPage);
   }
 
