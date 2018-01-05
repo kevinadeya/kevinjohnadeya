@@ -1,8 +1,23 @@
 <ion-header>
   <ion-navbar side="left">
     <ion-title>
-      <img src="../../assets/imgs/logo-1.png" alt="logo" height="44" class="logo">
+      <!-- <img src="../../assets/imgs/logo-1.png" alt="logo" height="44" class="logo"> -->
     </ion-title>
+
+    <ion-menu [content]="mycontent">
+      <ion-content>
+        <ion-list>
+     test
+     test
+     test
+     test
+     test
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    
+    <ion-nav #mycontent [root]="rootPage"></ion-nav>
+    
   </ion-navbar>
 </ion-header>
 

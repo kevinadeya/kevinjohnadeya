@@ -1,9 +1,16 @@
 page-home {
-.logo { display: block; text-align: left;}
+
 }
+
+
+.logo {
+     display: block; 
+     text-align: left;
+    }
 
 .toolbar-background{
     background-color: #b8dee4;
+    overflow: hidden;
 }
 
 .tabbar { 
