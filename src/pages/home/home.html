@@ -1,12 +1,29 @@
 <ion-header>
   <ion-navbar side="left">
     <ion-title>
-      <img src="../../assets/imgs/logo-1.png" alt="logo" height="44" class="logo">
+      <!-- <img src="../../assets/imgs/logo-1.png" alt="logo" height="44" class="logo"> -->
     </ion-title>
 
+<<<<<<< HEAD
     <button ion-button menuToggle icon-only>
         <ion-icon name='menu'></ion-icon>
       </button>
+=======
+    <ion-menu [content]="mycontent">
+      <ion-content>
+        <ion-list>
+     test
+     test
+     test
+     test
+     test
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    
+    <ion-nav #mycontent [root]="rootPage"></ion-nav>
+    
+>>>>>>> ded01a5e1ad43d22b3ac1854244a18c00111ae29
   </ion-navbar>
 </ion-header>
 
