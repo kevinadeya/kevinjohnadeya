@@ -32,7 +32,7 @@ var JoinCrossing = mongoose.model('JoinCrossing', {
     trim: true
   },
   newsletter: {
-      type: boolean,
+      type: Boolean,
       default: false
   }
 });
