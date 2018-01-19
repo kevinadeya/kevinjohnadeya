@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, stringify } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { JoinInfo } from '../../models/joinInfo';
+
 
 /**
  * Generated class for the JoinPage page.
@@ -15,6 +17,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class JoinPage {
 
+public regInfo: JoinInfo = new JoinInfo;
+public info: Array<JoinInfo>;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -22,4 +27,30 @@ export class JoinPage {
     console.log('ionViewDidLoad JoinPage');
   }
 
+  send() {
+
+    let name 
+    let email;
+    let birth;
+    let city;
+    let type;
+    let newsletter ;
+
+    let obj = {
+      name: this.regInfo.name,
+      email:  this.regInfo.email,
+      birth: this.regInfo.birth,
+      city: this.regInfo.city,
+      type: this.regInfo.type,
+      newsletter: this.regInfo.newsletter
+    }
+    
+       
+
+    console.log(obj);
+  }
+  
+  
 }
+
+
