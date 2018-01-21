@@ -22,22 +22,22 @@
     <ion-card-content>
        <ion-item>
           <ion-label color="primary" stacked>Name</ion-label>
-          <ion-input type="text" placeholder="Name"></ion-input>
+          <ion-input type="text" placeholder="Name" [(ngModel)]="regInfo.name" name="name"></ion-input>
         </ion-item>
         <ion-item>
             <ion-label color="primary" stacked>Mail</ion-label>
-            <ion-input type="email" placeholder="Mail"></ion-input>
+            <ion-input type="email" placeholder="Mail" [(ngModel)]="regInfo.email" name="email"></ion-input>
           </ion-item>
           <ion-item>
-              <ion-label color="primary" stacked>Date of birth</ion-label>
-              <ion-input type="date"></ion-input>
+              <ion-label color="primary" stacked>Date of birth </ion-label>
+              <ion-input type="date" [(ngModel)]="regInfo.birth"></ion-input>
             </ion-item>
             <ion-item>
                 <ion-label color="primary" stacked>City of recidence</ion-label>
-                <ion-input type="text" placeholder="City of recidence"></ion-input>
+                <ion-input type="text" placeholder="City of recidence" [(ngModel)]="regInfo.city"></ion-input>
               </ion-item>
 
-              <ion-list radio-group [(ngModel)]="membership">
+              <ion-list radio-group [(ngModel)]="regInfo.type">
 
                   <ion-list-header>
                       Type of membership
@@ -60,7 +60,7 @@
                                 
                 </ion-list>
 
-                <ion-list radio-group [(ngModel)]="newsletter">
+                <ion-list radio-group [(ngModel)]="regInfo.newsletter">
 
                     <ion-list-header>
                         I want to recive the CB newsletter
@@ -68,17 +68,17 @@
                   
                     <ion-item>
                       <ion-label>Yes</ion-label>
-                      <ion-radio value="yes"></ion-radio>
+                      <ion-radio value=true></ion-radio>
                     </ion-item>
                   
                     <ion-item>
                       <ion-label>No</ion-label>
-                      <ion-radio value="no"></ion-radio>
+                      <ion-radio value=false></ion-radio>
                     </ion-item>
                        
                   </ion-list>
 
-                  <button ion-button color="secondary" class="left">
+                  <button ion-button color="secondary" class="left" (click) ="send()">
                       Send
                     </button>
                     
