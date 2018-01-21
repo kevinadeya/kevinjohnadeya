@@ -14,11 +14,11 @@ const port = process.env.PORT;
 app.use(bodyParser.json());
 
 app.post('/join', (req, res) => {
-  var todo = new JoinCrossing({
+  var join = new JoinCrossing({
     text: req.body.text
   });
 
-  todo.save().then((doc) => {
+  join.save().then((doc) => {
     res.send(doc);
   }, (e) => {
     res.status(400).send(e);
