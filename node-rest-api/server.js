@@ -15,7 +15,12 @@ app.use(bodyParser.json());
 
 app.post('/join', (req, res) => {
   var join = new JoinCrossing({
-    text: req.body.text
+    name: req.body.name,
+    email: req.body.email,
+    birth: req.body.birth,
+    city: req.body.city,
+    type: req.body.type,
+    newsletter: req.body.newsletter
   });
 
   join.save().then((doc) => {
